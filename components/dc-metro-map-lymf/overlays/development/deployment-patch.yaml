@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-lymf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-lymf@sha256:c74e2ef1ca0710c0783f05097701324be71e617cb7f99be6d7e45d587f9ae724
+        name: my-nodejs
+        resources: {}
+status: {}
